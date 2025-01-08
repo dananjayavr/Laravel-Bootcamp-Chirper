@@ -1,6 +1,6 @@
 services:
   php:
-    image: dunglas/frankenphp
+    image: dunglas/frankenphp:php8.3-bookworm
     restart: always
     ports:
       - "80:80" # HTTP
