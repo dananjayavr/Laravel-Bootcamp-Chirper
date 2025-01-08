@@ -1,9 +1,9 @@
 FROM dunglas/frankenphp
 
 # Be sure to replace "your-domain-name.example.com" by your domain name
-ENV SERVER_NAME=chirp.cynetis-embedded.com
+# ENV SERVER_NAME=chirp.cynetis-embedded.com
 # If you want to disable HTTPS, use this value instead:
-# ENV SERVER_NAME=:80
+ENV SERVER_NAME=:80
 
 RUN install-php-extensions @composer pdo_pgsql
 
