@@ -1,11 +1,11 @@
 services:
   php:
-    image: dunglas/frankenphp:php8.3-bookworm
+    image: dunglas/frankenphp
     restart: always
     ports:
       - "80:80" # HTTP
-      - "443:443" # HTTPS
-      - "443:443/udp" # HTTP/3
+#      - "443:443" # HTTPS
+#      - "443:443/udp" # HTTP/3
     volumes:
       - caddy_data:/data
       - caddy_config:/config
